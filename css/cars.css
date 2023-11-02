@@ -198,7 +198,7 @@ img{
 }
 
 .featured__item img{
-    width: 1.5rem;
+    width: 5rem;
 }
 
 .featured__item span,
@@ -441,13 +441,12 @@ footer {
     color: #fff;
     border: none;
     border-radius: 0.75rem;
-    padding: 0.5rem 1rem;
     cursor: pointer;
     margin-left: 0.5rem;
 }
 
 .search-button i {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 #search::placeholder {
