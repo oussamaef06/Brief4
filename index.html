@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AUTOBAHN</title>
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="images/logo1.png">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -18,12 +19,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="home.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
     <div class="page1">
+      <div class="overlay"></div>
     <div class="sidebar-container">
       <div class="logo"><img src="images/logo1.png" /></div>
       <div class="side-text">
@@ -35,15 +38,15 @@
       <header>
         <nav>
             <ul class='nav-barr'>
-                <li class='logoo'><a href='index.html'><img src='images/logo1.png'/></a></li>
+                <li class='logoo'><a href='#'><img src='images/logo1.png'/></a></li>
                 <input type='checkbox' id='checkk' />
                 <span class="menuu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="About.html">About</a></li>
                     <li><a href="cars.html">Cars</a></li>
-                    <li><a href="">MotorSport</a></li>
-                    <li><a href="">Supports</a></li>
-                    <li><a href=""><i class="fas fa-shopping-cart"></i></a></li> <!-- Shopping cart icon -->
+                    <li><a href="">Support</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart" id="count"></i></a></li>
+                     <!-- Shopping cart icon -->
                     <label for="checkk" class="close-menuu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="checkk" class="open-menuu"><i class="fas fa-bars"></i></label>
@@ -79,48 +82,144 @@
             <li><a href="">GALLERY</a></li>
           </ul>
         </div>
-      </div>>
+      </div>
     </section>
 </div>
 
-
-<div class="slideshow-container">
-<h1>TOP 3</h1>
-    <div class="mySlides fade">
-        <!-- <div class="numbertext">1 / 3</div> -->
-        <img src="img/hakon-sataoen-W1PF7llLxMc-unsplash.jpg" style="width:100%" class="caros">
-        <div class="text1">Caption Text</div>
+<h1>Testimonials</h1>
+<div class="wrapper">
+  <div class="box">
+    <i class="fas fa-quote-left quote"></i>
+    <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+    <div class="content">
+      <div class="info">
+        <div class="name">Lewis Hamilton</div>
+        <div class="job">Pilote automobile</div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/372998689_851887709639598_3674361037384230391_n.jpg" alt="">
+      </div>
     </div>
-
-    <div class="mySlides fade">
-        <!-- <div class="numbertext">2 / 3</div> -->
-        <img src="img/254084.jpg" style="width:100%" class="caros">
-        <div class="text1">Caption Two</div>
+  </div>
+  <div class="box">
+    <i class="fas fa-quote-left quote"></i>
+    <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+    <div class="content">
+      <div class="info">
+        <div class="name">Max Verstappen</div>
+        <div class="job">Pilote automobile</div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/Max_Verstappen_2017_Malaysia_3_(cropped).jpg" alt="">
+      </div>
     </div>
-
-    <div class="mySlides fade">
-        <!-- <div class="numbertext">3 / 3</div> -->
-        <img src="img/fabe-collage-xR8Xj3Pq__M-unsplash.jpg" style="width:100%" class="caros">
-        <div class="text1">Caption Three</div>
+  </div>
+  <div class="box">
+    <i class="fas fa-quote-left  quote"></i>
+    <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+    <div class="content">
+      <div class="info">
+        <div class="name">Kristina Bellis</div>
+        <div class="job">Freelancer | Advertiser</div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/profile-3.jpeg" alt="">
+      </div>
     </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+  </div>
 </div>
-<br>
 
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+
 
 <img src="images/autoban.jpg" class="auto"> 
 
-<div id="footer"></div>
-<script src="Components/footer.js"></script>
-<script src="js/script.js"></script>
+<footer class="footer">
+    <div class="container">
+      <div class="col1">
+        <a href="#" class="brand">AUTOBAHN</a>
+        <ul class="media-icons">
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col2">
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">MotorSport</a></li>
+          <li><a href="#">Support</a></li>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem excepturi ipsam unde obcaecati iusto velit labore consequuntur officiis aut neque?</p>
+        </ul>
+      </div>
+      <div class="col3">
+        <p>Subscribe to our newslatter</p>
+        <form>
+          <div class="input-wrap">
+            <input type="email" placeholder="ex@gmail.com" /><button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </form>
+        <ul class="services-icons">
+          <li>
+            <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-cc-apple-pay"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-google-pay"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="mekk">
+        <p>@SAMAH 2023 - All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+<script>
+   const cart = JSON.parse(localStorage.getItem('cart')) || [];
+updateCartCount(cart.length);
+
+function updateCartCount(count) {
+    const cartCountElement = document.getElementById('count');
+    cartCountElement.innerText = count;
+}
+</script>
 
 </body>
 </html>

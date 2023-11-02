@@ -1,0 +1,271 @@
+#navbar{
+    position: absolute;
+    
+}
+.hafsa1 img{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.main1{
+    background-color: #232A30;
+}
+.main1 h1{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    font-size: xx-large;
+}
+.abt{
+    background-color: #232A30;
+    color: wheat;
+
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #232A30;
+    width: 100%; 
+}
+.section1{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+.section1 p{
+    padding: 0 4em 2em 4em;
+}
+.section img{
+    max-width: 100%; 
+    height: auto; 
+}
+.section2{
+    width: 609px;
+    text-align: center;
+    padding: 1em;
+}
+.section2 p{
+    padding: 1em 4em 0 4em;
+}
+.merceides{
+    display: flex;
+}
+.merceides img{
+    width: 100%;
+    margin-top: 5em ;
+    margin-bottom: 3em;
+}
+.history, .Team, .Values, .Reviews{
+    text-align: center;
+    font-size: xx-large;
+    letter-spacing: 15px;
+}
+.line {
+    border-top: 2px solid wheat; 
+    width: 50%;
+    padding-bottom:2em;
+    margin-left: 25%;
+}
+.history-content{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    margin-bottom: 4em;
+}
+.history-content p{
+    width: 40%;
+    font-size: 25px;
+    text-align: center;
+}
+.Team-mbr{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 7px;
+    text-align: center;
+    color: rgba(245, 222, 179, 0.429);
+}
+.Team-mbr p {
+    padding-top: 10%;
+}
+.titre-team{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    padding-top: 1em;
+    padding-bottom:1em;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+}
+.Members{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f0f012;
+    margin-bottom: 3em; 
+}
+.Values-content{
+    display: flex;
+    align-items: center;   
+    text-align: center;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    margin-bottom: 4em;
+}
+.Values-content p{
+    font-size: 30px;
+    font-family: 'IM Fell Great Primer', serif;
+    margin-left: 4%;
+}
+.old-car img{
+    width: 100%;
+    height: auto;
+}
+.autobahn-pic{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    font-size: 30px;
+}
+.autobahn-pic img{
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.50); 
+    border-radius: 15px;
+    margin-bottom: 3em;
+}
+.autobahn-pic p{
+    width: 100%;
+    text-align: center; 
+    padding: 2em 5em;
+    font-size: larger;
+    font-family: 'IM Fell Great Primer', serif;
+}
+.section img ,.section2 img, .history-content img, .Team-mbr img{
+    box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.50);
+    border-radius: 15px;
+}
+.Reviews h5{
+    font-size: medium;
+}
+.reviews-profil{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 3em;
+    background-color: #f2f0f012;
+    margin-top: 5%;
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 20px;
+}
+.reviews-profil span{
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(169, 132, 30);
+}
+.R1, .R2, .R3{
+    width: 300px;
+}
+@media (min-width: 768px) {
+    .section1, .section2 {
+        width: 50%; 
+    }
+    
+}
+@media (max-width:768px) {
+    .Team-mbr{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .Team-mbr p {
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    .reviews-profil{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 2em;
+
+    }
+    .R1, .R2, .R3{
+        margin-bottom: 10%;
+    }
+    .Values-content img{
+        width: 300px;
+        height: auto;
+    }
+    .Values-content p{
+        font-size: medium;
+    }
+    .Values-content{
+        width: 80%;
+        margin: 10%;
+    }   
+    .autobahn-pic p{
+        padding: 1em 3em;
+        font-size:25px;
+    }
+    .autobahn-pic img{
+        width: 400px;
+    }
+    .history-content img{
+        width: 300px;
+        height: auto;
+    }
+    .history-content p{
+       font-size: 15px;
+       padding-left: 0;
+       padding-right: 1em;
+    }
+    .history-content{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 4em;
+    }
+    .section1 img, .section2 img{
+        width: 550px;
+        height: auto;
+    }
+    .section2 p{
+        padding: 1em;
+    }
+    .abt h1{
+       text-align: center;
+       font-size: large;
+    }
+    .history, .Team, .Values, .Reviews{
+        text-align: center;
+        font-size: large;
+        letter-spacing: 15px;
+    }
+    .merceides img{
+        margin-top: 2em ;
+        margin-bottom: 2em;
+    }
+    .titre-team{
+        font-size: large;
+        padding-top: 1em;
+        padding-bottom:2em;
+    }   
+    .history, .Team, .Values, .Reviews{
+        font-size: large;
+        letter-spacing: 10px;
+    }
+    .Values .line{
+        width: 60%;
+        margin-left: 20%;
+        padding: 0;
+    }
+}
