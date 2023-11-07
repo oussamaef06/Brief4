@@ -19,7 +19,7 @@ html {
 
 html {
   font-family: #0a0a0b;
-  font-size: 0.813rem;
+  /* font-size: 0.813rem; */
   background-color: #232a30;
   color: #babec4;
 }
@@ -36,7 +36,7 @@ h1,
 h2,
 h3 {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 ul {
@@ -257,8 +257,10 @@ img {
 }
 
 .featured__price {
+  position: absolute;
   font-size: 1rem;
   padding-left: 10px;
+  bottom: 10px;
 }
 
 .featured__button {
@@ -280,13 +282,31 @@ img {
   transform: translateX(-0.25rem);
 }
 
-.active-featured {
+.featured__item.active-featured:active {
   background-color: #4178dc;
 }
 
 .active-featured span,
 .active-featured img {
   opacity: 1;
+}
+
+/*--cars responsive--*/
+
+@media (max-width: 740px) {
+  .featured__filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-bottom: 3.5rem;
+    flex-wrap: wrap;
+  }
+  .featured__content {
+    grid-template-columns: repeat(1, 200px);
+    row-gap: 2.5rem;
+    justify-content: center;
+  }
 }
 
 /*---------nav and footer------*/
@@ -454,228 +474,238 @@ footer .container {
 /*-------------cars Info---------*/
 
 .about__container {
-    row-gap: 6rem;
-  }
-  
-  .about__group {
-    position: relative;
-  }
-  
-  .about__group img {
-    width: 310px;
-    border-radius: 0.5rem;
-    width: 70%;
-  }
-  
-  .about__card {
-      width: 180px;
-      position: absolute;
-      bottom: -1.5rem;
-      background-color: hsla(0, 0%, 100%, 0.1);
-      backdrop-filter: blur(16px);
-      padding: 1rem 1.75rem;
-      text-align: center;
-      border-radius: 1.25rem;
-      left: 630px;
-  }
-  
-  .about__group h1 {
-    font-size: 50px;
-    font-weight: 700;
-  }
-  
-  .about__container p {
-      color: #aaa;
-      text-align: left;
-      font-size: 16px;
-      font-weight: 400;
-      margin-bottom: 20px;
-  }
-  
-  .ts1 {
-      display: flex;
-      align-items: center;
-      padding: 30px;
-  }
-  
-  .ts1 img {
-      max-width: 70%;
-      height: auto;
-      animation: slideFromRight 1s forwards;
-      margin: 20px;
-  }
-  
-  .text-container {
-      color: #fff;
-      text-align: center;
-  }
-  
-  .text-container h5, .text-container p {
-      font-size: 1rem;
-      margin: 10px 0;
-      text-align: center;
-      animation: slideFromLeft 1s forwards;
-      transform-origin: left;
-  }
-  
-  .info-section {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-  }
-  
-  .info-section img {
-      width: 100%;
-      height: auto;
-  }
-  
-  .info-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-      padding: 10px 150px 10px 150px;
-  }
-  
-  .info-box {
-      text-align: center;
-      color: white;
-      z-index: 1;
-      transition: all 0.5s;
-  }
-  
-  .info-box h4 {
-      font-size: 24px;
-  }
-  
-  .info-box h6 {
-      font-size: 14px;
-      opacity: 0.7;
-  }
-  
-  .info-box:hover {
-      transform: translateY(10px);
-  }
-  
-  .info-section1 {
-      background: #fff;
-      color: #000;
-      padding: 2rem;
-      text-align: center;
-      transition: background 0.5s;
-  }
-  
-  .info-section1 img {
-      max-width: 100%;
-      height: auto;
-  }
-  
-  .model {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-  }
-  
-  .model-bo h1 {
-      color: #000;
-      font-size: 2.5rem;
-      margin-bottom: 15px;
-  }
-  
-  .model-box {
-      flex: 1;
-      padding: 20px;
-      background: #f3f3f3;
-      border-radius: 10px;
-      text-align: left;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .model h3 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: #000;
-  }
-  
-  .model-stats {
-      display: flex;
-      justify-content: space-between;
-  }
-  
-  .info-section1 h1 {
-      font-size: 60px;
-  }
-  
-  .full-width-image {
-      width: 100%;
-  }
-  
-  .fich {
-      background: #000000;
-      padding: 2rem;
-      text-align: center;
-  }
-  
-  .fich-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  .fich-image {
-      flex: 1;
-      max-width: 50%;
-      padding: 0 2rem;
-  }
-  
-  .fich-image img {
-      max-width: 100%;
-      height: auto;
-  }
-  
-  .fich-details {
-      flex: 1;
-      text-align: left;
-  }
-  
-  .fich h2 {
-      font-size: 2rem;
-  }
-  
-  .fich p {
-      font-size: 1rem;
-      margin: 0.5rem 0;
-  }
-  
-  .fich hr {
-      border: 1.5px solid #ffffff;
-      margin: 0.5rem 0;
-      width: 10%;
-  }
+  row-gap: 6rem;
+}
 
+.about__group {
+  position: relative;
+}
 
-  @keyframes slideFromLeft {
-      from {
-          transform: translateX(-50px);
-          opacity: 0;
-      }
-      to {
-          transform: translateX(0);
-          opacity: 1;
-      }
+.about__group img {
+  width: 310px;
+  border-radius: 0.5rem;
+  width: 70%;
+}
+
+.about__card {
+  width: 180px;
+  position: absolute;
+  bottom: -1.5rem;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(16px);
+  padding: 1rem 1.75rem;
+  text-align: center;
+  border-radius: 1.25rem;
+  left: 630px;
+}
+
+.about__group h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.about__container p {
+  color: #aaa;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.ts1 {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.ts1 img {
+  max-width: 70%;
+  height: auto;
+  animation: slideFromRight 1s forwards;
+  margin: 20px;
+}
+
+.text-container {
+  color: #fff;
+  text-align: center;
+}
+
+.text-container h5,
+.text-container p {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: center;
+  animation: slideFromLeft 1s forwards;
+  transform-origin: left;
+}
+
+.info-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-section img {
+  width: 100%;
+  height: auto;
+}
+
+.info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10px 150px 10px 150px;
+}
+
+.info-box {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.info-box h4 {
+  font-size: 24px;
+}
+
+.info-box h6 {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.info-box:hover {
+  transform: translateY(10px);
+}
+
+.info-section1 {
+  background: #fff;
+  color: #000;
+  padding: 2rem;
+  text-align: center;
+  transition: background 0.5s;
+}
+
+.info-section1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.model {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.model-bo h1 {
+  color: #000;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.model-box {
+  flex: 1;
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.model h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.model-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-section1 h1 {
+  font-size: 60px;
+}
+
+.full-width-image {
+  width: 100%;
+}
+
+.fich {
+  background: #000000;
+  padding: 2rem;
+  text-align: center;
+}
+
+.fich-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fich-image {
+  flex: 1;
+  max-width: 50%;
+  padding: 0 2rem;
+}
+
+.fich-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fich-details {
+  flex: 1;
+  text-align: left;
+}
+
+.fich h2 {
+  font-size: 2rem;
+}
+
+.fich p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.fich hr {
+  border: 1.5px solid #ffffff;
+  margin: 0.5rem 0;
+  width: 10%;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
   }
-  
-  @keyframes slideFromRight {
-      from {
-          transform: translateX(50px);
-          opacity: 0;
-      }
-      to {
-          transform: translateX(0);
-          opacity: 1;
-      }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+hafsa1 img {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.full-width-image img {
+  width: 100%;
+  height: auto;
+}

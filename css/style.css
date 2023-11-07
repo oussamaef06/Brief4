@@ -480,6 +480,48 @@ footer {
     background: #fff;
     color: #111;
   }
+
+     /* --------------- formValidation checkou page ----------------- */
+  .cardCheck .ico {
+    position: absolute;
+    right: 4px;
+    bottom: 9px;
+    color: #57c97d;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .cardCheck .icos {
+    position: absolute;
+    right: 18px;
+    bottom: 9px;
+    color: #57c97d;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .cardCheck {
+    position: relative
+  }
+
+  .cardCheck img {
+    width: 50px;
+    height: 20px;
+    object-fit: cover
+  }
+  .custom {
+    max-width: 830px;
+    margin: auto;
+
+  }
+  .custom h1 {
+ color: #111;
+ padding: 30px 0 20px 0;
+  }
+  .error{
+    color: red;
+  }
+  .posiEror{
+    position: absolute;
+  }
   /* == responsive == */
   @media screen and (max-width: 900px) {
     .footer .container {

@@ -18,11 +18,10 @@ function generateFooter() {
       </div>
       <div class="col2">
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Cars</a></li>
-          <li><a href="#">MotorSport</a></li>
-          <li><a href="#">Support</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="cars.html">Cars</a></li>
+          <li><a href="Support.html">Support</a></li>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem excepturi ipsam unde obcaecati iusto velit labore consequuntur officiis aut neque?</p>
         </ul>
       </div>

@@ -34,7 +34,7 @@
         <div id="navbar"> 
 
         </div>
-        <img src="img/pic.png" alt="pic">
+        <img src="images/autoban.jpg" alt="pic">
     </div>
         <section class="featured " id="featured">
             <h2 class="section__title">
@@ -49,28 +49,28 @@
             </div>
             <div class="featured__container container">
                 <ul class="featured__filters">
-                        <button class="featured__item active-featured" id="all" data-filter="all">
-                            <span>All</span>
-                        </button>
-                        <button value="tesla" class="barndBtn featured__item" data-filter=".tesla">
-                            <img src="img/logo3.png" alt="">
-                        </button>
-                        <button value="audi" class=" barndBtn featured__item" data-filter=".audi">
-                            <img src="img/logo2.png" alt="">
-                        </button>
-                        <button value="porsche" class="barndBtn featured__item" data-filter=".porsche">
-                            <img src="img/logo1.png" alt="">
-                        </button>
-                        <button value="lambo" class="barndBtn featured__item" data-filter=".lambo">
-                            <img src="img/logo4.png" alt="">
-                        </button>
-                        <button value="bmw" class="barndBtn featured__item" data-filter=".bmw">
-                            <img src="img/logo5.png" alt="">
-                        </button>
-                        <button value="mercedes" class="barndBtn featured__item" data-filter=".mercedes">
-                            <img src="img/logo7.png" alt="">
-                        </button>
-                </ul>
+                    <button class="featured__item active-featured" id="all" data-filter="all">
+                        <span>All</span>
+                    </button>
+                    <button value="tesla" class="barndBtn featured__item" data-filter=".tesla">
+                        <img src="img/logo3.png" alt="">
+                    </button>
+                    <button value="audi" class=" barndBtn featured__item" data-filter=".audi">
+                        <img src="img/logo2.png" alt="">
+                    </button>
+                    <button value="porsche" class="barndBtn featured__item" data-filter=".porsche">
+                        <img src="img/logo1.png" alt="">
+                    </button>
+                    <button value="lambo" class="barndBtn featured__item" data-filter=".lambo">
+                        <img src="img/logo4.png" alt="">
+                    </button>
+                    <button value="bmw" class="barndBtn featured__item" data-filter=".bmw">
+                        <img src="img/logo5.png" alt="">
+                    </button>
+                    <button value="mercedes" class="barndBtn featured__item" data-filter=".mercedes">
+                        <img src="img/logo7.png" alt="">
+                    </button>
+            </ul>
 
                 <div class="carItems featured__content grid" id="carItems">
                  <!----------------display cars ------------------>
@@ -87,6 +87,29 @@
                 </ul>
               </nav>
         </div>
+
+        <script>
+            function setActiveFeatured(button) {
+              const featuredItems = document.querySelectorAll('.featured__item');
+          
+              // Remove the 'active-featured' class from all buttons
+              featuredItems.forEach(item => {
+                item.classList.remove('active-featured');
+              });
+          
+              // Add the 'active-featured' class to the clicked button
+              button.classList.add('active-featured');
+            }
+          
+            const featuredButtons = document.querySelectorAll('.featured__item');
+          
+            // Attach a click event listener to each button
+            featuredButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                setActiveFeatured(button);
+              });
+            });
+          </script>
 
         <div id="footer"></div>
         <script src="Components/navBar.js"></script>
